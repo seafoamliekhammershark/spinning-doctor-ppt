@@ -5,14 +5,26 @@ body{
     align-items: center;
     height: 100vh;
 }
-#harley {
-    animation: spin 5s linear infinite;
-}
 #harley.paused {
     animation-play-state: paused;
 }
 #harley-container {
-    display:inline-block;
+    display: inline-block;
+    perspective: 500px;
+}
+
+#harley {
+    animation: spin 5s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 @keyframes bounce {
     0% { transform: translateY(0px); }
@@ -32,6 +44,16 @@ body{
     margin-top: 20px;
     animation: caution-spin 2s linear infinite;
 }
+
 #caution.stopped {
     animation: none;
+}
+
+@keyframes caution-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
