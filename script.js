@@ -64,7 +64,7 @@ caution.classList.add("stopped");
 }
     if (pats == 2) {
         document.getElementById("harley").src = "annoyed harley 3.jpeg";
-            dialogue.textContent = "I am the head of Special Projects. You are not allowed to touch me.";
+            dialogue.textContent = "I am the head of Special Projects. There is no purpose in touching me.";
         setTimeout(function() {
             dialogue.textContent = "";
         }, 3000);
@@ -78,7 +78,7 @@ caution.classList.add("stopped");
     }
     if (pats == 20) {
         document.getElementById("harley").src = "ANGYer harley 5.jpeg";
-            dialogue.textContent = "Perhaps Yarnaby would appreciate this more than I do...";
+            dialogue.textContent = "That's enough.";
         setTimeout(function() {
             dialogue.textContent = "";
         }, 3000);
