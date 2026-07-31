@@ -1,0 +1,37 @@
+body{
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#harley {
+    animation: spin 5s linear infinite;
+}
+#harley.paused {
+    animation-play-state: paused;
+}
+#harley-container {
+    display:inline-block;
+}
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+#harley-container.bounce {
+    animation: bounce 0.3s;
+}
+#dialogue {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+#caution {
+    margin-top: 20px;
+    animation: caution-spin 2s linear infinite;
+}
+#caution.stopped {
+    animation: none;
+}
