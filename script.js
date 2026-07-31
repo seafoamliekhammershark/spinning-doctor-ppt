@@ -98,6 +98,3 @@ caution.classList.add("stopped");
         }, 2000);
     }
 }
-
-
-dialouge
